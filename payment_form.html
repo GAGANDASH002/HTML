@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment_form</title>
+</head>
+<body>
+    <form action="">
+        <p>Required fields are marked by *</p>
+        <h1>Course Type *</h1>
+        <fieldset>
+            <legend>Courses Available</legend>
+            <p>
+                ALPHA <input type="radio" name="courses" id="alpha" required>
+                CONQUEOR <input type="radio" name="courses" id="conqueor" required>
+                SAMARTH <input type="radio" name="courses" id="samarth" required>
+                SAMARTH+ <input type="radio" name="courses" id="samarth+" required>
+            </p>
+        </fieldset>
+        <h1>Payment Form</h1>
+        <h2>Contact Info</h2>
+        <p>Name *: <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender *</legend>
+        <p>
+            Male <input type="radio" name="gender" id="M" required>
+            Female <input type="radio" name="gender" id="F" required>
+        </p>
+    </fieldset>
+    <p>Address: <textarea name="address" id="address" cols="100" rows="8"></textarea></p>
+    <p>Email id *: <input type="email" name="email" id="email" required></p>
+    <p>Pincode : <input type="number" name="pincode" id="pincode"></p>
+    <h2>Payment Information</h2>
+    <p>Card Type *: 
+        <select name="Card_type" id="Card_type" required>
+            <option value="">--Select a Card Type--</option><!--If value not kept empty here, then the value will be submitted in the server without selection by user-->
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="rupay">Rupay</option>
+        </select>
+    </p>
+    <p>Card Number *: <input type="number" name="card num" id="card num" required></p>
+    <p>Card Expiry *: <input type="date" name="card expiry" id="card expiry" required></p>
+    <p>CVV *: <input type="password" name="CVV" id="CVV" required></p>
+    <input type="submit" value="Pay Now">
+    </form>
+</body>
+</html>
