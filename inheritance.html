@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color:red;
+        }
+        .one a{
+            color: inherit;/*class one's a tag has inherited color from its parent i.e body tag having color red*/
+        }
+        
+        .two a{
+            color:initial;/*initial value is set as color (varied from one browswer to another)*/
+        }
+
+        .three a{
+            color:unset;/*either inherit or initial value is set*/
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Default <a href="">Link</a>Color</li>
+        <li class="one">Inherited <a href="">Link</a>Color</li>
+        <li class="two">Initial <a href="">Link</a>Color</li>
+        <li class="three">Unset <a href="">Link</a>Color</li>
+    </ul>
+</body>
+</html>
