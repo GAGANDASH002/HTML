@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payment_form</title>
+    <link rel="stylesheet" href="../CSS/payment.css">
 </head>
 <body>
+    <div class="container">
     <form action="">
         <p>Required fields are marked by *</p>
         <h1>Course Type *</h1>
@@ -18,9 +20,9 @@
                 SAMARTH+ <input type="radio" name="courses" id="samarth+" required>
             </p>
         </fieldset>
-        <h1>Payment Form</h1>
+        <h1 class="main_heading">Payment Form</h1>
         <h2>Contact Info</h2>
-        <p>Name *: <input type="text" name="name" required></p>
+        <p>Name *: <input type="text" name="name" required placeholder="name"></p>
         <fieldset>
             <legend>Gender *</legend>
         <p>
@@ -28,10 +30,14 @@
             Female <input type="radio" name="gender" id="F" required>
         </p>
     </fieldset>
-    <p>Address: <textarea name="address" id="address" cols="100" rows="8"></textarea></p>
-    <p>Email id *: <input type="email" name="email" id="email" required></p>
-    <p>Pincode : <input type="number" name="pincode" id="pincode"></p>
+    <p>Address: <textarea name="address" id="address" cols="100" rows="8" placeholder="Write your address"></textarea></p>
+    <p>Email id *: <input type="email" name="email" id="email" required placeholder="abcd@gmail.com"></p>
+    <p>Pincode : <input type="number" name="pincode" id="pincode" placeholder="123456"></p>
     <h2>Payment Information</h2>
+    <h2>Accepted Cards</h2>
+    <a href="https://logowik.com/visa-payment-card-logo-vector-svg-pdf-ai-eps-cdr-free-download-15498.html#google_vignette"><img src="https://logowik.com/content/uploads/images/visa-payment-card1873.jpg" alt="Visa" width="40"></a>
+    <a href="https://en.m.wikipedia.org/wiki/File:MasterCard_Logo.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/450px-MasterCard_Logo.svg.png" alt="mastercard" width="40"></a>
+    <a href="https://en.m.wikipedia.org/wiki/File:RuPay.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/RuPay.svg/383px-RuPay.svg.png" alt="rupay" width="40"></a>
     <p>Card Type *: 
         <select name="Card_type" id="Card_type" required>
             <option value="">--Select a Card Type--</option><!--If value not kept empty here, then the value will be submitted in the server without selection by user-->
@@ -40,10 +46,12 @@
             <option value="rupay">Rupay</option>
         </select>
     </p>
-    <p>Card Number *: <input type="number" name="card num" id="card num" required></p>
+    <p>Card holder name *: <input type="text" name="card holder" id="card holder" required placeholder="Card holder name"></p>
+    <p>Card Number *: <input type="number" name="card num" id="card num" required placeholder="1111-2222-3333-4444"></p>
     <p>Card Expiry *: <input type="date" name="card expiry" id="card expiry" required></p>
-    <p>CVV *: <input type="password" name="CVV" id="CVV" required></p>
+    <p>CVV *: <input type="password" name="CVV" id="CVV" placeholder="123"></p>
     <input type="submit" value="Pay Now">
     </form>
+</div>
 </body>
 </html>
